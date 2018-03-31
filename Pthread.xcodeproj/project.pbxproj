@@ -1,0 +1,364 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F2737DB2066528A0019C465 /* GHWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F2737DA2066528A0019C465 /* GHWebViewController.m */; };
+		2F70759C20632174002D4C7B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F70759B20632174002D4C7B /* main.m */; };
+		2F70759F20632174002D4C7B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F70759E20632174002D4C7B /* AppDelegate.m */; };
+		2F7075A220632174002D4C7B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F7075A120632174002D4C7B /* ViewController.m */; };
+		2F7075A520632174002D4C7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F7075A320632174002D4C7B /* Main.storyboard */; };
+		2F7075A720632174002D4C7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F7075A620632174002D4C7B /* Assets.xcassets */; };
+		2F7075AA20632174002D4C7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F7075A820632174002D4C7B /* LaunchScreen.storyboard */; };
+		2FD219DB206656FA00117468 /* 01_pthread_NSThread_GCD.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 2FD219D4206656FA00117468 /* 01_pthread_NSThread_GCD.webarchive */; };
+		2FD219DC206656FA00117468 /* 03_NSCache_runloop.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 2FD219D5206656FA00117468 /* 03_NSCache_runloop.webarchive */; };
+		2FD219DD206656FA00117468 /* 04d_网络基础_NSURLConnection_NSURLSession.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 2FD219D6206656FA00117468 /* 04d_网络基础_NSURLConnection_NSURLSession.webarchive */; };
+		2FD219DE206656FA00117468 /* 05_JSON解析_XML解析_NSURLSessionDownloadTask_文件压缩和解压缩.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 2FD219D7206656FA00117468 /* 05_JSON解析_XML解析_NSURLSessionDownloadTask_文件压缩和解压缩.webarchive */; };
+		2FD219DF206656FA00117468 /* 06_NSURLSession文件上传_AFN.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 2FD219D8206656FA00117468 /* 06_NSURLSession文件上传_AFN.webarchive */; };
+		2FD219E0206656FA00117468 /* 07_数据安全_数字签名_HTTPS.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 2FD219D9206656FA00117468 /* 07_数据安全_数字签名_HTTPS.webarchive */; };
+		2FD219E22066582A00117468 /* 02_GCD_NSOperation_SDWebImage.webarchive in Resources */ = {isa = PBXBuildFile; fileRef = 2FD219E12066582A00117468 /* 02_GCD_NSOperation_SDWebImage.webarchive */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2F2737D92066528A0019C465 /* GHWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHWebViewController.h; sourceTree = "<group>"; };
+		2F2737DA2066528A0019C465 /* GHWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHWebViewController.m; sourceTree = "<group>"; };
+		2F70759720632174002D4C7B /* Pthread.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pthread.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F70759B20632174002D4C7B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2F70759D20632174002D4C7B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2F70759E20632174002D4C7B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2F7075A020632174002D4C7B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2F7075A120632174002D4C7B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2F7075A420632174002D4C7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2F7075A620632174002D4C7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2F7075A920632174002D4C7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2F7075AB20632174002D4C7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FD219D4206656FA00117468 /* 01_pthread_NSThread_GCD.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = 01_pthread_NSThread_GCD.webarchive; sourceTree = "<group>"; };
+		2FD219D5206656FA00117468 /* 03_NSCache_runloop.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = 03_NSCache_runloop.webarchive; sourceTree = "<group>"; };
+		2FD219D6206656FA00117468 /* 04d_网络基础_NSURLConnection_NSURLSession.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "04d_网络基础_NSURLConnection_NSURLSession.webarchive"; sourceTree = "<group>"; };
+		2FD219D7206656FA00117468 /* 05_JSON解析_XML解析_NSURLSessionDownloadTask_文件压缩和解压缩.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "05_JSON解析_XML解析_NSURLSessionDownloadTask_文件压缩和解压缩.webarchive"; sourceTree = "<group>"; };
+		2FD219D8206656FA00117468 /* 06_NSURLSession文件上传_AFN.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "06_NSURLSession文件上传_AFN.webarchive"; sourceTree = "<group>"; };
+		2FD219D9206656FA00117468 /* 07_数据安全_数字签名_HTTPS.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "07_数据安全_数字签名_HTTPS.webarchive"; sourceTree = "<group>"; };
+		2FD219E12066582A00117468 /* 02_GCD_NSOperation_SDWebImage.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = 02_GCD_NSOperation_SDWebImage.webarchive; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2F70759420632174002D4C7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F70758E20632173002D4C7B = {
+			isa = PBXGroup;
+			children = (
+				2F70759920632174002D4C7B /* Pthread */,
+				2F70759820632174002D4C7B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2F70759820632174002D4C7B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F70759720632174002D4C7B /* Pthread.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2F70759920632174002D4C7B /* Pthread */ = {
+			isa = PBXGroup;
+			children = (
+				2F70759D20632174002D4C7B /* AppDelegate.h */,
+				2F70759E20632174002D4C7B /* AppDelegate.m */,
+				2F7075A020632174002D4C7B /* ViewController.h */,
+				2F7075A120632174002D4C7B /* ViewController.m */,
+				2F2737D92066528A0019C465 /* GHWebViewController.h */,
+				2F2737DA2066528A0019C465 /* GHWebViewController.m */,
+				2FD219D2206656FA00117468 /* web */,
+				2F7075A320632174002D4C7B /* Main.storyboard */,
+				2F7075A620632174002D4C7B /* Assets.xcassets */,
+				2F7075A820632174002D4C7B /* LaunchScreen.storyboard */,
+				2F7075AB20632174002D4C7B /* Info.plist */,
+				2F70759A20632174002D4C7B /* Supporting Files */,
+			);
+			path = Pthread;
+			sourceTree = "<group>";
+		};
+		2F70759A20632174002D4C7B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2F70759B20632174002D4C7B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2FD219D2206656FA00117468 /* web */ = {
+			isa = PBXGroup;
+			children = (
+				2FD219D4206656FA00117468 /* 01_pthread_NSThread_GCD.webarchive */,
+				2FD219E12066582A00117468 /* 02_GCD_NSOperation_SDWebImage.webarchive */,
+				2FD219D5206656FA00117468 /* 03_NSCache_runloop.webarchive */,
+				2FD219D6206656FA00117468 /* 04d_网络基础_NSURLConnection_NSURLSession.webarchive */,
+				2FD219D7206656FA00117468 /* 05_JSON解析_XML解析_NSURLSessionDownloadTask_文件压缩和解压缩.webarchive */,
+				2FD219D8206656FA00117468 /* 06_NSURLSession文件上传_AFN.webarchive */,
+				2FD219D9206656FA00117468 /* 07_数据安全_数字签名_HTTPS.webarchive */,
+			);
+			path = web;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2F70759620632174002D4C7B /* Pthread */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F7075AE20632174002D4C7B /* Build configuration list for PBXNativeTarget "Pthread" */;
+			buildPhases = (
+				2F70759320632174002D4C7B /* Sources */,
+				2F70759420632174002D4C7B /* Frameworks */,
+				2F70759520632174002D4C7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pthread;
+			productName = Pthread;
+			productReference = 2F70759720632174002D4C7B /* Pthread.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2F70758F20632173002D4C7B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = yangrui;
+				TargetAttributes = {
+					2F70759620632174002D4C7B = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 7Q495GQ95K;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2F70759220632173002D4C7B /* Build configuration list for PBXProject "Pthread" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2F70758E20632173002D4C7B;
+			productRefGroup = 2F70759820632174002D4C7B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2F70759620632174002D4C7B /* Pthread */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F70759520632174002D4C7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FD219DB206656FA00117468 /* 01_pthread_NSThread_GCD.webarchive in Resources */,
+				2F7075AA20632174002D4C7B /* LaunchScreen.storyboard in Resources */,
+				2FD219DF206656FA00117468 /* 06_NSURLSession文件上传_AFN.webarchive in Resources */,
+				2F7075A720632174002D4C7B /* Assets.xcassets in Resources */,
+				2FD219DE206656FA00117468 /* 05_JSON解析_XML解析_NSURLSessionDownloadTask_文件压缩和解压缩.webarchive in Resources */,
+				2FD219E0206656FA00117468 /* 07_数据安全_数字签名_HTTPS.webarchive in Resources */,
+				2FD219DD206656FA00117468 /* 04d_网络基础_NSURLConnection_NSURLSession.webarchive in Resources */,
+				2FD219E22066582A00117468 /* 02_GCD_NSOperation_SDWebImage.webarchive in Resources */,
+				2F7075A520632174002D4C7B /* Main.storyboard in Resources */,
+				2FD219DC206656FA00117468 /* 03_NSCache_runloop.webarchive in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F70759320632174002D4C7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F2737DB2066528A0019C465 /* GHWebViewController.m in Sources */,
+				2F7075A220632174002D4C7B /* ViewController.m in Sources */,
+				2F70759F20632174002D4C7B /* AppDelegate.m in Sources */,
+				2F70759C20632174002D4C7B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2F7075A320632174002D4C7B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F7075A420632174002D4C7B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2F7075A820632174002D4C7B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F7075A920632174002D4C7B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2F7075AC20632174002D4C7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2F7075AD20632174002D4C7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2F7075AF20632174002D4C7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7Q495GQ95K;
+				INFOPLIST_FILE = Pthread/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = asdfasdfa.we.asdf.a.a;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2F7075B020632174002D4C7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7Q495GQ95K;
+				INFOPLIST_FILE = Pthread/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = asdfasdfa.we.asdf.a.a;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F70759220632173002D4C7B /* Build configuration list for PBXProject "Pthread" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F7075AC20632174002D4C7B /* Debug */,
+				2F7075AD20632174002D4C7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F7075AE20632174002D4C7B /* Build configuration list for PBXNativeTarget "Pthread" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F7075AF20632174002D4C7B /* Debug */,
+				2F7075B020632174002D4C7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2F70758F20632173002D4C7B /* Project object */;
+}
