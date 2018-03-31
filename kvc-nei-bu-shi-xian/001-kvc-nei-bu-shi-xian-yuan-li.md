@@ -60,5 +60,21 @@ dic = @{@"age"：@(15)};
 因此在使用KVC时需要对这种，属性名相同，类型不同做特别的注意
 
 
+**KVC 类型不一致的解决方案如下：**
+重写对应属性的set方法
+```objc
+-(void)setAge:(NSString *)age{
+    
+    if ([age isKindOfClass:[NSNumber class]]) {
+      _age = [NSString stringWithFormat:@"%@",(NSNumber *)age];
+    }
+    else{
+        _age = age;
+    }
+}
+
+```
+
+
 
 
