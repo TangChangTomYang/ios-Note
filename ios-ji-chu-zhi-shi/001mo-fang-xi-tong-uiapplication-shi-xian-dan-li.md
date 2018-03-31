@@ -42,7 +42,7 @@ NSException *exc = [NSException exceptionWithName:@"NSInvalidArgumentException" 
 抛出异常程序崩溃
 [exc raise];
 }
-return [super allocWithZone:zone];
+        return [super allocWithZone:zone];
 }
 @end
 ```
