@@ -47,3 +47,22 @@
 }
 
 ```
+
+
+#### 二、 在使用控制器的View时有个特点
+
+**上面有提到，控制器有个类似下面这样的懒加载的View**
+```objc
+- (UIView *)view {
+
+    if (_view == nil) {
+
+        [self loadView];
+        [self viewDidLoad];
+    }
+    return _view;
+
+}
+
+```
+**可以发现，在这个方法内部会先调用 viewDidLoad 方法后才会返回 View， 因此我们在开发中修改控制器的View的属性，是在viewDidLoad 这个方法之后才生效，一定要注意这个顺序的特点**
