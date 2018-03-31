@@ -1,4 +1,4 @@
-####一、 005-Xib 描述控制器的View
+####一、Xib 描述控制器的View
 
 主要实时分为4步：
 - 1> 创建要描述控制器的Xib
@@ -11,6 +11,31 @@
 ***
 
 ![](/assets/filesOwner View.png)
+
+
+
+####二、 initWithNibName: nibNameOrNil bundle: 方法的原理
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
