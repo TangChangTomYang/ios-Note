@@ -3,7 +3,7 @@
 
 - **控制器的View是怎么加载的，什么时候加载的？**
 
-第一次使用控制器的时候系统自动调用这个方法，加载控制器的View
+在第一次使用控制器的view 时（即 self.view 时），就会调用 loadView 加载View 
 ```objc
 控制器有个类似下面这样的一个懒加载get方法：
 - (UIView *)view {
@@ -23,6 +23,7 @@
 **- (void)loadView 特点：**
 - 1> 一但重写了loadView,就代表控制器的View有自己来创建
 - 2> 写[super loadView]也不行.
+- 3> 不要在loadView 方法中 使用self.View  会造成死循环。
 
 ```objc
 - (void)loadView {
@@ -40,6 +41,7 @@
     view.backgroundColor = [UIColor redColor];
     self.view = view;
     
+    这样是没有用的
     //[super loadView];
     
 }
