@@ -17,6 +17,18 @@
 ####二、 initWithNibName: nibNameOrNil bundle: 方法的原理
 
 
+initWithNibName
+- 1> 如果指定Xib 的名称就去加载指定的Xib.
+```objc
+[[TestViewController alloc] initWithNibName:@"abc" bundle:nil];
+加载abc对应的Xib 
+```
+- 2> 如果没有指定Xib 的名字，即 name = nil 时，会有几种情况，如下：
+        - 1> 系统首先会去检查有没有Xib名字和控制器的类名相同，如： xibName = TestViewController 存在，则加载这个Xib .
+        - 2> 如果控制器名字的Xib没找到，就会去找去除Controller的控制器名字的Xib 如，xibName =  TestView，有就加载。
+        - 3> 如果还没有就不使用Xib 加载控制器了。
+
+
 
 
 
