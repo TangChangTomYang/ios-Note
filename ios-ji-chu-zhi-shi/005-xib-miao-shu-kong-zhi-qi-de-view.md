@@ -27,6 +27,10 @@ initWithNibName
         - 1> 系统首先会去检查有没有Xib名字和控制器的类名相同，如： xibName = TestViewController 存在，则加载这个Xib .
         - 2> 如果控制器名字的Xib没找到，就会去找去除Controller的控制器名字的Xib 如，xibName =  TestView，有就加载。
         - 3> 如果还没有就不使用Xib 加载控制器了。
+        
+
+- **3>  注意控制器的init方法,内部会默认调用initWithNibName： 这个方法，因此在使用时需要注意 Xib 描述控制器时的特性**
+
 
 
 
