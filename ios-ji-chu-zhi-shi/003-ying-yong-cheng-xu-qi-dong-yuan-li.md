@@ -25,8 +25,5 @@ int main(int argc, char * argv[]) {
 
 ```
 
-
-![image](images/applaunch.png)
-
-![](/assets/a.png)
+![](/assets/applaunch.png)
 
