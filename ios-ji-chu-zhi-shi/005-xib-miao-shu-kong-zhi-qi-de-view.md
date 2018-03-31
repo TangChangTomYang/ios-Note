@@ -31,8 +31,11 @@ initWithNibName
 
 - **3>  注意控制器的init方法,内部会默认调用initWithNibName： 这个方法，因此在使用时需要注意 Xib 描述控制器时的特性**
 
+![](/assets/createXibViewController.png)
+***
 
 ![](/assets/xibView.png)
+**以上这种方式创建的控制器，默认会使用Xib 来描述控制器的View，这个要能明白原理**
 
 
 
