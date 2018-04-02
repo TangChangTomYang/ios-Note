@@ -13,4 +13,10 @@
   * [001-UIPickerView](ios-chang-yong-de-kong-jian/001-uipickerview.md)
 * [KVC 内部实现](kvc-nei-bu-shi-xian.md)
   * [001-KVC 内部实现原理-和注意](kvc-nei-bu-shi-xian/001-kvc-nei-bu-shi-xian-yuan-li.md)
+* [iOS 中的数据存储](ios-zhong-de-shu-ju-cun-chu.md)
+  * [001-XML 属性列表（plist）归档](001-xml-shu-xing-lie-biao-ff08-plist-ff09-gui-dang.md)
+  * 002-Preference\(偏好设置\)
+  * 003-NSKeyedArchiver 归档 （NSCoding）
+  * 004-SQLite3
+  * 005-CoreData
 
