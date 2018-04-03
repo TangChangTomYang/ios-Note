@@ -19,4 +19,5 @@
   * [003-NSKeyedArchiver 归档 （NSCoding）](003-nskeyedarchiver-gui-dang-nscoding.md)
   * 004-SQLite3
   * 005-CoreData
+* [modal 出来的控制器的问题](modal-chu-lai-de-kong-zhi-qi-de-wen-ti.md)
 
