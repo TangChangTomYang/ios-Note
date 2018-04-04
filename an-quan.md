@@ -92,6 +92,9 @@ http://www.ruanyifeng.com/blog/2013/07/rsa_algorithm_part_two.html
 实际上一个**“证书”**本来就有规定的格式规范，上面我们把各种额外信息塞入证书里是不合适的，于是苹果另外搞了个东西，叫 **Provisioning Profile**，一个 **Provisioning Profile** 里就包含了证书以及上述提到的所有额外信息，以及所有信息的签名。
 
 
+所以整个流程稍微变一下，就变成这样了：
+
+
 
 
 
