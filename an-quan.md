@@ -32,8 +32,7 @@ http://www.ruanyifeng.com/blog/2013/07/rsa_algorithm_part_two.html
 
 **数字签名的作用是我对某份数据打个标记，表示我认可这份数据（我签了名），然后我把这个签了名的数据发送给其他人，其他人可以知道这份数据是经过我本人认证过的， 数据没有被篡改**
 
-
-大发送到
+![image](assets/appSign.png)
 
 
 
