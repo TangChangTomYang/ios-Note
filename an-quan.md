@@ -118,9 +118,22 @@ http://www.ruanyifeng.com/blog/2013/07/rsa_algorithm_part_two.html
 
 - 第 2 步苹果处理，不用管。
 
-- 第 3 步对应把 **CertificateSigningRequest** 传到苹果后台生成证书，并下载到本地。这时本地有两个证书，一个是第 1 步生成的，一个是这里下载回来的，keychain 会把这两个证书关联起来，因为他们公私钥是对应的，在XCode选择下载回来的证书时，实际上会找到 keychain 里对应的私钥去签名。这里私钥只有生成它的这台 Mac 有，如果别的 Mac 也要编译签名这个 App 怎么办？答案是把私钥导出给其他 Mac 用，在 keychain 里导出私钥，就会存成 .p12 文件，其他 Mac 打开后就导入了这个私钥。
-第 4 步都是在苹果网站上操作，配置 AppID / 权限 / 设备等，最后下载 Provisioning Profile 文件。
-第 5 步 XCode 会通过第 3 步下载回来的证书（存着公钥），在本地找到对应的私钥（第一步生成的），用本地私钥去签名 App，并把 Provisioning Profile 文件命名为 embedded.mobileprovision 一起打包进去。这里对 App 的签名数据保存分两部分，Mach-O 可执行文件会把签名直接写入这个文件里，其他资源文件则会保存在 _CodeSignature 目录下。
+- 第 3 步对应把 **CertificateSigningRequest** 传到苹果后台生成证书，并下载到本地。**这时本地有两个证书，一个是第 1 步生成的，一个是这里下载回来的**，keychain 会把这两个证书关联起来，因为他们公私钥是对应的，**在XCode选择下载回来的证书时，实际上会找到 keychain 里对应的私钥去签名。**这里私钥只有生成它的这台 Mac 有，如果别的 Mac 也要编译签名这个 App 怎么办？**答案是把私钥导出给其他 Mac 用，在 keychain 里导出私钥，就会存成 .p12 文件，其他 Mac 打开后就导入了这个私钥。**
+‘
+- 第 4 步都是在苹果网站上操作，配置 AppID / 权限 / 设备等，最后下载 Provisioning Profile 文件。
+
+- 第 5 步 XCode 会通过第 3 步下载回来的证书（存着公钥），在本地找到对应的私钥（第一步生成的），用本地私钥去签名 App，并把 Provisioning Profile 文件命名为 **embedded.mobileprovision** 一起打包进去。这里对 App 的签名数据保存分两部分，Mach-O 可执行文件会把签名直接写入这个文件里，其他资源文件则会保存在 _CodeSignature 目录下。
+
+- 第 6 - 7 步的打包和验证都是 Xcode 和 iOS 系统自动做的事。
+
+
+**这里再总结一下这些概念：**
+- **1、证书：内容是公钥或私钥，由其他机构对其签名组成的数据包。**
+- **2、Entitlements：包含了 App 权限开关列表。**
+- **3、CertificateSigningRequest：本地公钥。**
+- **4、p12：本地私钥，可以导入到其他电脑。**
+- **5、Provisioning Profile：包含了 证书 / Entitlements 等数据，并由苹果后台私钥签名的数据包。**
+
 
 
 
