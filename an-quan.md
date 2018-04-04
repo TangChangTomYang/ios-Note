@@ -136,6 +136,11 @@ http://www.ruanyifeng.com/blog/2013/07/rsa_algorithm_part_two.html
 
 
 
+####六、其他发布方式
+
+前面以开发包为例子说了签名和验证的流程，另外两种方式 In-House 企业签名和 AD-Hoc 流程也是差不多的，只是企业签名不限制安装的设备数，另外需要用户在 iOS 系统设置上手动点击信任这个企业才能通过验证。
+
+
 
 
 
