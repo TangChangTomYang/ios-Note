@@ -85,7 +85,7 @@ http://www.ruanyifeng.com/blog/2013/07/rsa_algorithm_part_two.html
 可以想到把 允许安装的设备 ID 列表 和 App对应的 AppID 等数据，都在第三步这里跟公钥L一起组成证书，再用苹果私钥 A 对这个证书签名。在最后第 5 步验证时就可以拿到设备 ID 列表，判断当前设备是否符合要求。根据数字签名的原理，只要数字签名通过验证，第 5 步这里的设备 IDs / AppID / 公钥 L 就都是经过苹果认证的，无法被修改，苹果就可以限制可安装的设备和 APP，避免滥用。
 
 
-####最终流程
+####四、最终流程
 到这里这个证书已经变得很复杂了，有很多额外信息，实际上除了 设备 ID / AppID，还有其他信息也需要在这里用苹果签名，像这个 APP 里 iCloud / push / 后台运行 等权限苹果都想控制，苹果把这些权限开关统一称为 Entitlements，它也需要通过签名去授权。
 
 
@@ -110,7 +110,8 @@ http://www.ruanyifeng.com/blog/2013/07/rsa_algorithm_part_two.html
 
 
 
-nn
+
+####概念和操作
 
 
 
