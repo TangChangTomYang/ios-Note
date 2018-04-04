@@ -21,6 +21,4 @@
   * 005-CoreData
 * [modal 出来的控制器的问题](modal-chu-lai-de-kong-zhi-qi-de-wen-ti.md)
 * [Transform](transform.md)
-* [安全](ios-appzhong-de-qian-ming-yuan-li.md)
-  * [iOS App 中的数字签名原理](ios-appzhong-de-qian-ming-yuan-li/ios-app-zhong-de-shu-zi-qian-ming-yuan-li.md)
 
