@@ -19,4 +19,10 @@
   * [iOS App 签名](an-quan/ios-app-qian-ming.md)
 * [iOS 中的事件](ios-zhong-de-shi-jian.md)
   * [001-](ios-zhong-de-shi-jian/001-.md)
+* [iOS中的数据存储](ioszhong-de-shu-ju-cun-chu.md)
+  * 001-xml 属性列表
+  * 002-偏好设置
+  * 003-归档
+  * 004-Sqlite
+  * 005-coreData
 
