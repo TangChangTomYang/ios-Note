@@ -19,14 +19,12 @@
   * [005-coreData](ioszhong-de-shu-ju-cun-chu/005-coredata.md)
 * [KVC 内部实现](kvc-nei-bu-shi-xian.md)
   * [001-KVC 内部实现原理-和注意](kvc-nei-bu-shi-xian/001-kvc-nei-bu-shi-xian-yuan-li.md)
-* [Transform](transform.md)
 * [安全](an-quan.md)
   * [iOS App 签名](an-quan/ios-app-qian-ming.md)
 * [iOS 中的事件](ios-zhong-de-shi-jian.md)
   * [001-](ios-zhong-de-shi-jian/001-.md)
 * 控制器相关操作
   * [001-控制器 modal ](001kong-zhi-qi-modal.md)
-* [modal 出来的控制器的问题](modal-chu-lai-de-kong-zhi-qi-de-wen-ti.md)
 * [动画](dong-hua.md)
   * 001-transform
 
