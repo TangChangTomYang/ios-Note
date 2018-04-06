@@ -23,4 +23,6 @@
   * [iOS App 签名](an-quan/ios-app-qian-ming.md)
 * [iOS 中的事件](ios-zhong-de-shi-jian.md)
   * [001-](ios-zhong-de-shi-jian/001-.md)
+* [控制器](kong-zhi-qi.md)
+  * [001-modal  控制器](kong-zhi-qi/001-modal-kong-zhi-qi.md)
 
