@@ -14,7 +14,8 @@
 ```objc
    [CATransaction begin];
     // 设置 取消隐士动画
-    [CATransaction setDisableActions:YES];
+     [CATransaction setDisableActions:YES];
+     [CATransaction setAnimationDuration:2.0];
     
     // do 隐士动画 属性
      self.layer.position = CGPointMake(200, 200);
