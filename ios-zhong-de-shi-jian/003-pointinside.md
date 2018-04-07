@@ -7,8 +7,10 @@
 **注意：**
 在判断时，需要保证point 与当前View处在同一坐标系内。
 
+```objc
 -(BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event{
 
    return [super pointInside:point withEvent:event];
     
 }
+```
