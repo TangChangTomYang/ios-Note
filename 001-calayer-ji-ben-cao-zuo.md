@@ -41,6 +41,8 @@
       self.layer.transform = CATransform3DMakeRotation(M_PI, 10, 10, 100);
       它是沿着：（0，0，0）~ （x,y,z） 方向的向量移动的。
      ```
+     
+     ![](/assets/xyzSystem.png)
 
 
 
