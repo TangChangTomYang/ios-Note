@@ -51,4 +51,28 @@
 
 ####四、心跳效果
 
+```objc
+// 心跳效果
+-(void)test2{
+    
+    // 1 创建动画
+    CABasicAnimation *anim = [CABasicAnimation animation];
+    
+    //2、 设置属性
+    anim.keyPath = @"transform.retation"; //表示的是 X Y 同时缩放
+    anim.toValue = @(0);
+    
+    //3 设置动画执行的次数
+    anim.repeatCount = HUGE;  //MAXFLOAT
+    anim.duration = 0.5;
+    
+    //4 设置动画自动返回，怎么出来的怎么回去
+    anim.autoreverses = YES;
+    
+    [self.redView.layer addAnimation:anim forKey:@"heartBit"];
+    
+    
+}
+```
+
 
