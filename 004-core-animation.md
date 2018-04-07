@@ -189,5 +189,49 @@ static int _imageIndex = 0;
 ```
 
 
+####七、转场动画
+
+
+![](/assets/CATransitionType.png)
+
+```objc
+static int _imageIndex = 0;
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    
+    
+ 
+    //转场代码必须得要与转场动画在同一个方法当中.
+    _imageIndex++;
+    if (_imageIndex == 5) {
+        _imageIndex = 0;
+    }
+    
+    NSString *imageName = [NSString stringWithFormat:@"%d",_imageIndex];
+    self.imageV.image = [UIImage imageNamed:imageName];
+    
+    
+    //转场动画
+    //添加动画
+    CATransition *anim = [CATransition animation];
+    //转场类型
+    anim.type = @"suckEffect";
+    //设置方向
+    //anim.subtype = @"fromTop";
+    anim.subtype = @"fromBottom";
+    
+    //从哪个位置开始动画
+    anim.startProgress = 0.2;
+    anim.endProgress = 0.5;
+    
+    anim.duration = 1.0;
+    
+    [self.imageV.layer addAnimation:anim forKey:nil];
+    
+
+    
+}
+```
+
+
 
 
