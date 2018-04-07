@@ -31,6 +31,39 @@
 
 ####三、自己实现hitTest方法
 
+```objc
+-(UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event{
+
+   //1、判断自己是否能接收事件
+    if(self.hidden == YES || self.alpha <= 0.01 || self.userInteractionEnabled == NO){
+    
+        return nil;
+    }
+    
+    // 2、 判断点在不在自己身上
+    if(![self pointInside:point withEvent:event]){
+        return nil;
+    }
+    
+    //3、 从后向前遍历所有的子控件，找出最适合的View
+    int childCount = (int)self.subviews.count;
+    for (int i = childCount -1; i >= 0; i--) {
+        UIView *childView = self.subviews[i];
+        
+        CGPoint childPoint = [self convertPoint:point toView:childView];
+        UIView *fitView = [childView hitTest:childPoint withEvent:event];
+        if(fitView){
+            return fitView;
+        }
+    }
+    
+    //4、 在子控件里没有找到最合适的View 说明自己是最合适的View
+    return self;
+    
+}
+
+```
+
 
 
 
