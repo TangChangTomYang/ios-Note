@@ -10,3 +10,19 @@
 
 ![](/assets/hittest.png)
 最适合的View
+
+
+####二、
+
+
+ - 什么时候调用： 当事件传递给当前的View时，会调用当前View 的hitTest方法
+ - 作用： 寻找最适合的View
+ - 返回值： 返回值是谁，谁就是最适合的View，谁就相应事件，就会调用谁的touches方法。
+```objc
+
+-(UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event{
+
+    return [super hitTest:point withEvent:event];
+    
+}
+```
