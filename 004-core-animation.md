@@ -103,4 +103,91 @@
 
 
 
+####六、 路径动画 --游泳的鱼
+
+```objc
+@interface ViewController ()
+
+/** <#注释#>*/
+@property (nonatomic ,weak) CALayer *fistLayer;
+
+@property (strong, nonatomic)  NSMutableArray *imageArray;
+
+@end
+
+@implementation ViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+
+    //设置背景
+    self.view.layer.contents = (id)[UIImage imageNamed:@"bg"].CGImage;
+    
+    CALayer *fistLayer = [CALayer layer];
+    fistLayer.frame = CGRectMake(100, 288, 89, 40);
+    //fistLayer.backgroundColor = [UIColor redColor].CGColor;
+    [self.view.layer addSublayer:fistLayer];
+    self.fistLayer = fistLayer;
+    
+    //加载图片
+    NSMutableArray *imageArray = [NSMutableArray array];
+    for (int i = 0; i < 10; i++) {
+       UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"fish%d",i]];
+        [imageArray addObject:image];
+    }
+    self.imageArray = imageArray;
+    //添加定时器
+    [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(update) userInfo:nil repeats:YES];
+    
+    
+    
+    //添加核心动画
+    CAKeyframeAnimation *anim = [CAKeyframeAnimation animation];
+    anim.keyPath = @"position";
+    
+    UIBezierPath *path = [UIBezierPath bezierPath];
+    [path moveToPoint:CGPointMake(100, 288)];
+    [path addLineToPoint:CGPointMake(100, 100)];
+    [path addLineToPoint:CGPointMake(300, 100)];
+    [path addQuadCurveToPoint:CGPointMake(300, 600) controlPoint:CGPointMake(400, 600)];
+    [path addLineToPoint:CGPointMake(100, 288)];
+    
+    
+    //设置路径
+    anim.path = path.CGPath;
+    anim.duration = 5.0;
+    anim.repeatCount = HUGE;
+    //根据路径,自动旋转
+    anim.rotationMode = @"autoReverse";
+    
+    //设置时间计算模型
+    anim.calculationMode = @"cubic";
+    
+    [self.fistLayer addAnimation:anim forKey:@"moveAnim"];
+
+    
+    
+}
+
+static int _imageIndex = 0;
+- (void)update {
+    
+    //从数组当中取出图片
+    UIImage *image = self.imageArray[_imageIndex];
+    self.fistLayer.contents = (id)image.CGImage;
+    _imageIndex++;
+    if (_imageIndex > 9) {
+        _imageIndex = 0;
+    }
+}
+
+
+
+
+@end
+
+```
+
+
+
 
