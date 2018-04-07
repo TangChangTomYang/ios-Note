@@ -35,4 +35,5 @@
 * [CALayer](calayer.md)
   * [001-CALayer 基本操作](001-calayer-ji-ben-cao-zuo.md)
   * [002-position 和 anchorPoint](002-position-he-anchorpoint.md)
+  * [003-隐士动画](003yin-shi-dong-hua.md)
 
