@@ -27,6 +27,7 @@
 * [iOS 中的事件](ios-zhong-de-shi-jian.md)
   * [001-触摸事件](ios-zhong-de-shi-jian/001-.md)
   * [002-hitTest方法](ios-zhong-de-shi-jian/002-hittestfang-fa.md)
+  * [003-pointInside](ios-zhong-de-shi-jian/003-pointinside.md)
 * [动画](dong-hua.md)
   * [001-transform](dong-hua/001-transform.md)
 
