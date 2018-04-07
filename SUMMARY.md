@@ -32,6 +32,7 @@
   * [001-transform](dong-hua/001-transform.md)
 * Quartz2D
   * [001-Quzrz2D 简介](001-quzrz2d-jian-jie.md)
+  * [002- 图像裁剪](002-tu-xiang-cai-jian.md)
 * [CALayer](calayer.md)
   * [001-CALayer 基本操作](001-calayer-ji-ben-cao-zuo.md)
   * [002-position 和 anchorPoint](002-position-he-anchorpoint.md)
