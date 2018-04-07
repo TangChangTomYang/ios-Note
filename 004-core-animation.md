@@ -75,4 +75,32 @@
 }
 ```
 
+####五、 帧动画
+
+```objc
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    
+    //可以根据路径做动画
+    CAKeyframeAnimation *anim = [CAKeyframeAnimation animation];
+    
+    anim.keyPath = @"transform.rotation";
+    //进行多个值之间的动画
+    anim.values = @[@(angleToRadio(-5)),@(angleToRadio(5)),@(angleToRadio(-5))];
+    anim.repeatCount = MAXFLOAT;
+    
+    //anim.autoreverses = YES;
+
+    anim.duration = 0.1;
+    
+    
+    
+    //添加动画
+    [self.iconImageView.layer addAnimation:anim forKey:nil];
+    
+}
+```
+
+
+
 
