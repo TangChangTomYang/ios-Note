@@ -34,6 +34,7 @@
   * [001-Quzrz2D 简介](001-quzrz2d-jian-jie.md)
   * [002- 图像裁剪](002-tu-xiang-cai-jian.md)
   * [003-绘制基本路劲](003hui-zhi-ji-ben-lu-jing.md)
+  * [004- 画进度条\(重绘\)](004-hua-jin-du-676128-zhong-7ed829.md)
 * [CALayer](calayer.md)
   * [001-CALayer 基本操作](001-calayer-ji-ben-cao-zuo.md)
   * [002-position 和 anchorPoint](002-position-he-anchorpoint.md)
