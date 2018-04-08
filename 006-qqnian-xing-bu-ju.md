@@ -17,7 +17,6 @@
 @implementation BageValueBtn
 
 -(CAShapeLayer *)shapL {
-    
     if (_shapL == nil) {
         //形状图层(根据一个路径生成一个图层(形状))
         CAShapeLayer *shapL = [CAShapeLayer layer];
@@ -28,10 +27,6 @@
     return _shapL;
 }
 
-- (void)awakeFromNib {
-    //初始化
-    [self setUp];
-}
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
@@ -202,10 +197,6 @@
 - (void)setHighlighted:(BOOL)highlighted {
 
 }
-
-
-
-
 @end
 
 
