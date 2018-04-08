@@ -32,3 +32,11 @@
     [path stroke];
 }
 ```
+
+
+其实画进度条也可以使用**CAShapeLayer**,利用他的两个属性:来绘制
+```objc
+@property CGFloat strokeStart;
+@property CGFloat strokeEnd;
+
+```
