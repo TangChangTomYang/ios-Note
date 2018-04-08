@@ -4,8 +4,8 @@
 
 - 1、UIPanGesture 
 - 2、UIImageView 动画
-- 3、CAShapeLayer 
-- 4、UIBezierPath
+- 3、CAShapeLayer  （给定一个CGPath 绘制一个形状的layer）
+- 4、UIBezierPath  绘制的技巧（2个端点 + 中间一个控制点）
 
 
 ```objc
