@@ -1,6 +1,5 @@
 ####一 绘制基本的线段
 
-
 **自定义View的步骤:**
  1> 新建一个类,继承自UIView
  2> 实现-(void)drawRect:(CGRect)rect 方法,然后在这个方法中
