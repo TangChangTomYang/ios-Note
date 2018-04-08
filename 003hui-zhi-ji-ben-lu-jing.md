@@ -11,6 +11,8 @@ drawRect: 方法 在View 显示的时候调用(如果是控制器,就是在ViewW
 ```objc 
 -(void)drawRect:(CGRect)rect{
     [self drawLine];
+    
+    // [self drawArc];
 
 }
 
@@ -45,4 +47,25 @@ drawRect: 方法 在View 显示的时候调用(如果是控制器,就是在ViewW
     CGContextStrokePath(ctx);
 }
 
+画圆弧
+可以直接通过贝塞尔路劲渲染
+
+-(void)drawArc{
+    UIBezierPath *path = [UIBezierPath  bezierPath];
+    
+    CGPoint center = CGPointMake(100, 100);
+    CGFloat radius = 50;
+    CGFloat startAngle =  0;
+    CGFloat endAngle = M_PI;
+    
+    
+    [path addArcWithCenter:center radius:radius startAngle:startAngle endAngle:endAngle clockwise:YES];
+    
+    [path stroke];
+}
+
 ```
+
+**注意:**
+
+**可以使用贝塞尔曲线直接绘制图形,但是必须在UIView 的drawRect 内调用,这样才能绘制出来(因为只有在drawRect 中才能拿到和View相关的上下文)**
