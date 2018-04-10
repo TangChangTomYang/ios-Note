@@ -112,6 +112,16 @@ NALU结构与片
 
 从上图中，可以看到，宏块中包含了：**宏块类型、预测类型、Coded Block Patter、Quantization Parameter、像素的亮度和色度数据等等信息。**
 
+####七、切片类型与宏块类型的关系
+
+对于切片（slice）来讲，分为以下几种类型：
+> 0、**P-slice.** Consists of P-macroblocks (each macro block is predicted using one reference frame) and / or I-macroblocks.
+1、**B-slice.** Consists of B-macroblocks (each macroblock is predicted using one or two reference frames) and / or I-macroblocks.
+2、**I-slice.** Contains only I-macroblocks. Each macroblock is predicted from previously coded blocks of the same slice.
+3、**SP-slice.** Consists of P and / or I-macroblocks and lets you switch between encoded streams.
+4、**SI-slice.** It consists of a special type of SI-macroblocks and lets you switch between encoded streams.
+
+
 
 
 
