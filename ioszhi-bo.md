@@ -38,7 +38,7 @@ H.264 的编码流程主要分为5个部分：（里面主要包含了很多的�
 ####原理简介
 
 - H.264 原始码流（又称为裸流），是一个接一个的NALU组成的，而他的功能分为两层：
-    - **视频编码层**（VCL,video coding layer）和**网络提取层**（NAL，network abstraction layer）。abstraction 是抽象的意思
+    - **视频编码层**（VCL,video coding layer）和**网络提取层**（NAL，network abstraction layer）。 abstraction 是抽象的意思
 
 - **VCL数据** 即编码处理的输出，它表示被压缩编码后的视频数据序列。
     - 在VCL 数据传输或存储之前，这些编码的VCL数据，先被映射或封装进NAL单元（一下简称 NALU ，nal unit）中。
