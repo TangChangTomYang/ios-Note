@@ -61,6 +61,8 @@ H.264 的编码流程主要分为5个部分：（里面主要包含了很多的�
 图片编码后
 ![](/assets/frame2Slice.png)
 
+
+
 NALU结构与片
 ![](/assets/naluSlice.png)
 
