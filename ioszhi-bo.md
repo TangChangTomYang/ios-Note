@@ -58,6 +58,12 @@ H.264 的编码流程主要分为5个部分：（里面主要包含了很多的�
 
 一帧图片经过 H.264 编码器之后，就被编码为一个或者多个片（slice），而装载着这些片（slice）的载体就是NALU了，我们可以看出NALU 和片slice的关系
 
+图片编码后
+![](/assets/frame2Slice.png)
+
+NALU结构与片
+![](/assets/naluSlice.png)
+
     
 
 
