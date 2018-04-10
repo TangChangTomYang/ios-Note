@@ -1,3 +1,5 @@
+
+
 ###直播总体概览
 ![](/assets/zhibo.png)
 
@@ -61,6 +63,20 @@
     
     
   
+**主要直播技术：**
+直播技术涉及的知识面很广，最主要的大概就是这几个：**软硬解码.h264、美颜处理、推流RTMP、拉流播放、视频录制、发送弹幕、即时通讯.**
+
+
+**说明：**
+- **软硬解码.h264**：使用iOS8.0之后苹果开源的VideoToolBox，这正是很多直播软件最低兼容iOS8的原因了
+
+- **美颜处理**：CPUImage，内置150多种滤镜，功能强大
+- **拉流播放**：ijkplayer.framework、VLC
+
+- **推流RTMP**：安装nginx+rtmp服务器，ffmpeg推流
+- **视频录制**：UIImagePiackerController、AVCaptureSession、GPUImageVideoCamera
+- **发送弹幕**：BarrageRenderer第三方库
+- **即时通讯**：XMPP、环信、融云等
     
 
 
