@@ -48,4 +48,6 @@ camera --> basicOperation --> renderView
 - 从静态图片中捕获并添加滤镜
 - 添加滤镜并转码视频
 
+**准备**
 
+- 导入头文件

@@ -29,3 +29,44 @@
 - 使用GPUImage拍张新的照片（美颜相机）
 - 录制视频（CMSampleBuffer）
 
+
+
+####四、使用GPUImage实现高斯模糊效果
+
+demo：https://github.com/TangChangTomYang/GPUGaussionFilter.git
+
+```objc
+
+   //1、获取需要高斯模糊处理的图片
+    UIImage *sourceImage = [UIImage imageNamed:@"test.png"];
+    
+    //2、 根据源图片创建 GPUImageOutput
+    GPUImagePicture *imagePic = [[GPUImagePicture alloc]initWithImage:sourceImage];
+    
+    //3、创建高斯模糊滤镜
+    GPUImageGaussianBlurFilter *gaussionFilter = [[GPUImageGaussianBlurFilter alloc]init];
+    //4、设置纹理参数  一般设置5
+    gaussionFilter.texelSpacingMultiplier = 3;
+    //5、 设置像素圆角 这个参数让图片 看起更圆润
+    gaussionFilter.blurRadiusInPixels = 8;
+    
+    //6、添加高斯滤镜
+    [imagePic addTarget:gaussionFilter];
+    
+    //7、 执行滤镜处理
+    [gaussionFilter useNextFrameForImageCapture];
+    [imagePic processImage];
+    
+    
+    // 8、获取处理后的图片
+   UIImage *nImage =  [gaussionFilter imageFromCurrentFramebuffer];
+   self.imageView.image = nImage;
+    
+    
+
+```
+
+
+
+
+
