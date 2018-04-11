@@ -48,9 +48,10 @@
   * [003-GPUImage](ioszhi-bo/003mei-yan-lv-jing-xiao-guo.md)
     * [001-GPUImage 滤镜效果](ioszhi-bo/003mei-yan-lv-jing-xiao-guo/001-gpuimage-lv-jing-xiao-guo.md)
     * [002- GPUImage 美颜相机](ioszhi-bo/003mei-yan-lv-jing-xiao-guo/002-gpuimage-mei-yan-xiang-ji.md)
+    * 003-直播视频录制
     * [001- 图像基础知识](ioszhi-bo/003mei-yan-lv-jing-xiao-guo/001-tu-xiang-ji-chu-zhi-shi.md)
     * [002—GPUImage框架知识](ioszhi-bo/003mei-yan-lv-jing-xiao-guo/002gpuimagekuang-jia-zhi-shi.md)
-  * 004-视频编码技术
+  * [004-视频编码技术](ioszhi-bo/004shi-pin-bian-ma-ji-zhu.md)
   * 005-iOS视频编码
   * 006-iOS视频软编码
   * 007-YUV颜色空间
