@@ -67,6 +67,9 @@ demo：https://github.com/TangChangTomYang/GPUGaussionFilter.git
 ```
 
 
+![](/assets/gaussion.png)
+
+
 
 
 
