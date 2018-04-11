@@ -1,4 +1,5 @@
 
+demo: https://github.com/TangChangTomYang/videoAudioCapture.git
 
 ####iOS 视频画面采集的主要步骤
 
@@ -113,3 +114,69 @@
 }
 @end
 ```
+
+
+####二、捕捉到的数据写入文件
+
+**主要的步骤如下：**
+- 1、创建捕捉文件输出AVCaptureFileOutput，具体比如：AVCaptureMovieFileOutput
+- 2、给AVCaptureFileOutput 对应的媒体链接connection 设置相应参数，如： [connection setAutomaticallyAdjustsVideoMirroring:YES];
+- 3、 将AVCaptureFileOutput 添加到当前的捕捉会话 [self.session addOutput:videoFileOutput];
+- 4、 开始录制并设置代理，监控文件的读写情况，[videoFileOutput startRecordingToOutputFileURL:fileUrl recordingDelegate:self];
+
+**具体文件写入代码如下：**
+```objc
+
+/** 将采集到的输出写入文件  */
+-(void)saveViewDataOutputToFile{
+    
+    // 创建写入文件的输出
+    AVCaptureMovieFileOutput *videoFileOutput = [[AVCaptureMovieFileOutput alloc]init];
+    AVCaptureConnection *connection = [videoFileOutput connectionWithMediaType:AVMediaTypeVideo];
+    [connection setAutomaticallyAdjustsVideoMirroring:YES];
+    
+    [self.session beginConfiguration];
+    if([self.session canAddOutput:videoFileOutput]){
+        [self.session addOutput:videoFileOutput];
+    }
+    [self.session commitConfiguration];
+    
+    self.videoFileOutput =  videoFileOutput;
+    
+    NSString *filePath = [[NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"test.mp4"];
+    NSURL *fileUrl = [NSURL fileURLWithPath:filePath];
+    [videoFileOutput startRecordingToOutputFileURL:fileUrl recordingDelegate:self];
+}
+
+
+#pragma mark- AVCaptureFileOutputRecordingDelegate
+- (void)captureOutput:(AVCaptureFileOutput *)output didStartRecordingToOutputFileAtURL:(NSURL *)fileURL fromConnections:(NSArray<AVCaptureConnection *> *)connections{
+    
+    
+    NSLog(@"开始写入文件");
+}
+
+- (void)captureOutput:(AVCaptureFileOutput *)output didPauseRecordingToOutputFileAtURL:(NSURL *)fileURL fromConnections:(NSArray<AVCaptureConnection *> *)connections NS_AVAILABLE_MAC(10_7){
+    
+     NSLog(@"暂停写入文件");
+}
+
+- (void)captureOutput:(AVCaptureFileOutput *)output didResumeRecordingToOutputFileAtURL:(NSURL *)fileURL fromConnections:(NSArray<AVCaptureConnection *> *)connections NS_AVAILABLE_MAC(10_7){
+      NSLog(@"恢复 写入文件");
+    
+}
+
+- (void)captureOutput:(AVCaptureFileOutput *)output didFinishRecordingToOutputFileAtURL:(NSURL *)outputFileURL fromConnections:(NSArray<AVCaptureConnection *> *)connections error:(nullable NSError *)error{
+    
+      NSLog(@"结束写入文件");
+}
+
+```
+
+
+
+
+
+
+
+
