@@ -238,6 +238,19 @@ demo: https://github.com/TangChangTomYang/videoAudioCapture.git
 
 ####四、停止会话捕捉
 
+**切换步骤**
+
+- 给切换过程添加动画
+- 获取当前摄像头是前置还是后置
+- 取出相反的摄像头（之前是前置，这次取出后置）
+- 通过新摄像头重新获取设备（AVCaptureDevice）
+- 通过设备（AVCaptureDevice）创建新的输入（AVCaptureDeviceInput）
+- 移除旧input&添加新的input
+    - 注意：修改session配置之前先调用开启修改配置选项，配置完成后，调用提交修改配置选项
+    - session?.beginConfiguration()
+    - session?.commitConfiguration()
+- 保存新的input
+
 
 ```objc
 
