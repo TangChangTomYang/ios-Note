@@ -236,6 +236,28 @@ demo: https://github.com/TangChangTomYang/videoAudioCapture.git
 ```
 
 
+####四、停止会话捕捉
+
+
+```objc
+
+-(void)stopRecord {
+    // 停止文件写入
+    [self.videoFileOutput  stopRecording];
+    self.videoFileOutput = nil;
+    [self.session stopRunning];
+    self.session = nil;
+    
+    // 如果需要的化，就移除预览图层，想定在某个画面就不用
+    [self.previewLayer removeFromSuperlayer];
+    self.previewLayer = nil;
+    
+}
+
+
+```
+
+
 
 
 
