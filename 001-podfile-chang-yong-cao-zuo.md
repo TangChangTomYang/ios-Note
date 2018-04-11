@@ -23,8 +23,9 @@ targetArr = ['targetName2', 'targetName2']
 
 targetArr.each do |tem|
 
-target tem do 
-    pod 'GPUImage'
+    target tem do 
+        pod 'GPUImage'
+    end
 end
 
 ```
