@@ -47,6 +47,7 @@
   * [002-视频采集和写入](ioszhi-bo/002shi-pin-cai-ji.md)
   * [003-美颜滤镜效果-GPUImage](ioszhi-bo/003mei-yan-lv-jing-xiao-guo.md)
     * [001- 图像基础知识](ioszhi-bo/003mei-yan-lv-jing-xiao-guo/001-tu-xiang-ji-chu-zhi-shi.md)
+    * [002—GPUImage框架知识](ioszhi-bo/003mei-yan-lv-jing-xiao-guo/002gpuimagekuang-jia-zhi-shi.md)
   * 004-视频编码技术
   * 005-iOS视频编码
   * 006-iOS视频软编码
