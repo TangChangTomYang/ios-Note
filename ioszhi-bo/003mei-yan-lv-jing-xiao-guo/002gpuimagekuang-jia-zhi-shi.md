@@ -30,3 +30,13 @@
 camera --> basicOperation --> renderView
 ```
 
+
+左边的参数遵循**ImageSource协议**，作为数据的输入，右边的参数遵循**ImageConsumer协议**，作为数据的输出。这里的**basicOperation**是**BasicOperation**的一个实例，其父类**ImageProcessingOperation同时遵循ImageSource和ImageConsumer协议**，所以它可以放在-->的左边或右边。
+
+**-->**的运算是左结合的，类似于GPUImage中的**addTarget方法**，但是**-->**有一个返回值，就是**右边的参数**。
+
+在上面的示例中，先计算了前半部**camera --> basicOperation**，然后右边的参数**basicOperation**作为返回值又参与了后半部**basicOperation --> renderView的计算**。
+
+**-->**体现了链式编程的思想，让代码更加优雅，在**GPUImage2**有着大量运用，这得益于Swift强大的语法，关于Swift中的高级运算符，
+
+
