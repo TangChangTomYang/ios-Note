@@ -58,4 +58,6 @@
   * [003-H264编码](ioszhi-bo/003-h264bian-ma.md)
   * [004-常用直播协议概览](ioszhi-bo/004-rtmp-xie-yi.md)
   * 009-推流演示
+* CocoaPods 常用操作
+  * [001- Podfile 常用操作](001-podfile-chang-yong-cao-zuo.md)
 
