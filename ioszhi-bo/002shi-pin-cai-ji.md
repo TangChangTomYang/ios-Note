@@ -1,7 +1,7 @@
 
 demo: https://github.com/TangChangTomYang/videoAudioCapture.git
-
-####iOS 视频画面采集的主要步骤
+<br>
+####一、iOS 视频画面采集的主要步骤
 
 - 1、创建一个捕捉会话 AVCaptureSession
 
@@ -115,6 +115,8 @@ demo: https://github.com/TangChangTomYang/videoAudioCapture.git
 @end
 ```
 
+<br>
+<br>
 
 ####二、捕捉到的数据写入文件
 
@@ -169,6 +171,65 @@ demo: https://github.com/TangChangTomYang/videoAudioCapture.git
 - (void)captureOutput:(AVCaptureFileOutput *)output didFinishRecordingToOutputFileAtURL:(NSURL *)outputFileURL fromConnections:(NSArray<AVCaptureConnection *> *)connections error:(nullable NSError *)error{
     
       NSLog(@"结束写入文件");
+}
+
+```
+
+
+<br>
+####三、捕捉输入源切换（切换摄像头）
+
+**主要步骤：**
+- 1、 获取原来的输入源
+- 2、获取将要使用的输入源AVCaptureDeviceInput
+- 3、 移除原来的输入源
+- 4、 添加当前的输入源
+注意： 移除和添加输入源输出源需要在Session的 事务中操作
+```objc
+-(void)changeCamera{
+    
+    //切换摄像头的主要步骤
+    
+    // 1 获取之前的摄像头
+    
+    // 2 获取当前应该显示的摄像头
+    AVCaptureDevice *currentCameraDev = nil;
+    NSArray<AVCaptureDevice *> *devices = [AVCaptureDevice devicesWithMediaType:AVMediaTypeVideo];
+    for (AVCaptureDevice *cameraDev in devices) {
+        
+        if (cameraDev.position != self.camaraDevInput.device.position) {
+            currentCameraDev = cameraDev;
+            break;
+        }
+    }
+    
+    if (currentCameraDev == nil) {
+        NSLog(@"没有其他的摄像头可以 使用, 切换摄像头失败");
+        return;
+    }
+    
+    // 3 根据当前应该显示的摄像头的Device 创建新的 input
+    NSError *err = nil;
+    AVCaptureDeviceInput *cameraDevInput = [AVCaptureDeviceInput deviceInputWithDevice:currentCameraDev error:&err];
+    if (err) {
+        NSLog(@"切换摄像头时 出错");
+        return;
+    }
+    
+    
+    // 4 在Session 中切换input
+    [self.session beginConfiguration];
+    
+    [self.session removeInput:self.camaraDevInput];
+    // 添加输入源
+    if ([self.session canAddInput:cameraDevInput]) {
+        [self.session addInput:cameraDevInput];
+        self.camaraDevInput = cameraDevInput;
+    }
+    
+    [self.session commitConfiguration];
+    
+    
 }
 
 ```
