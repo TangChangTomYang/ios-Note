@@ -185,6 +185,7 @@ demo: https://github.com/TangChangTomYang/videoAudioCapture.git
 - 3、 移除原来的输入源
 - 4、 添加当前的输入源
 注意： 移除和添加输入源输出源需要在Session的 事务中操作
+
 ```objc
 -(void)changeCamera{
     
