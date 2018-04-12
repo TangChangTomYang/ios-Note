@@ -56,6 +56,7 @@
     * [002-H264硬编码](ioszhi-bo/004shi-pin-bian-ma-ji-zhu/002-h264bian-ma.md)
     * [003-iOS视频软编码](ioszhi-bo/004shi-pin-bian-ma-ji-zhu/003-iosshi-pin-ruan-bian-ma.md)
     * [004-YUV颜色空间](ioszhi-bo/004shi-pin-bian-ma-ji-zhu/004-yuvyan-se-kong-jian.md)
+    * [005-ffmpeg 视频播放器](ioszhi-bo/004shi-pin-bian-ma-ji-zhu/005-ffmpeg-shi-pin-bo-fang-qi.md)
   * 005-流媒体协议
   * 009-推流演示
   * 010-iOS中实现推流
