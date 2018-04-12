@@ -52,7 +52,7 @@
     * [001- 图像基础知识](ioszhi-bo/003mei-yan-lv-jing-xiao-guo/001-tu-xiang-ji-chu-zhi-shi.md)
     * [002—GPUImage框架知识](ioszhi-bo/003mei-yan-lv-jing-xiao-guo/002gpuimagekuang-jia-zhi-shi.md)
   * [004-视频编码技术](ioszhi-bo/004shi-pin-bian-ma-ji-zhu.md)
-    * [001- 编码常识](ioszhi-bo/004shi-pin-bian-ma-ji-zhu/001-bian-ma-chang-shi.md)
+    * [001- 编码常识与H264](ioszhi-bo/004shi-pin-bian-ma-ji-zhu/001-bian-ma-chang-shi.md)
     * [002-H264硬编码](ioszhi-bo/004shi-pin-bian-ma-ji-zhu/002-h264bian-ma.md)
     * [003-iOS视频软编码](ioszhi-bo/004shi-pin-bian-ma-ji-zhu/003-iosshi-pin-ruan-bian-ma.md)
     * [004-YUV颜色空间](ioszhi-bo/004shi-pin-bian-ma-ji-zhu/004-yuvyan-se-kong-jian.md)
