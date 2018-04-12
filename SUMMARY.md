@@ -52,6 +52,7 @@
     * [001- 图像基础知识](ioszhi-bo/003mei-yan-lv-jing-xiao-guo/001-tu-xiang-ji-chu-zhi-shi.md)
     * [002—GPUImage框架知识](ioszhi-bo/003mei-yan-lv-jing-xiao-guo/002gpuimagekuang-jia-zhi-shi.md)
   * [004-视频编码技术](ioszhi-bo/004shi-pin-bian-ma-ji-zhu.md)
+    * [001- 编码常识](ioszhi-bo/004shi-pin-bian-ma-ji-zhu/001-bian-ma-chang-shi.md)
   * 005-iOS视频编码
   * 006-iOS视频软编码
   * 007-YUV颜色空间
