@@ -23,5 +23,36 @@
     
     ![](/assets/193353-5d0a1789b252264b.png)
     
+- 使用**FFmpeg命令**将**mp4**文件切换成**m3u8**&**ts切片**
+
+
+```objc
+
+// 安装Homebrew
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+// 安装FFmpeg
+brew install ffmpeg
+// 执行转换命令
+ffmpeg -i XXX.mp4 -c:v libx264 -c:a copy -f hls XXX.m3u8
+```
+
+- **m3u8索引头解析**
+
+    ![](/assets/193353-9c881720992085f4.png)   
+    
+     
+
+ ####三、RTMP 
+ 
+-  RTMP协议是 Adobe 公司开发的一个**基于TCP的应用层协议**，Adobe 公司也公布了关于RTMP的规范
+- **RTMP本质上是流协议**，主要的优势是：
+    - **实时性高**：RTMP的实时性在3秒之内，经过多层CDN节点分发后，实时性也在3秒左右,在一些实时性有要求的应用中以RTMP为主。
+    - **支持加密**：RTMPE和RTMPS为加密协议
+    - **稳定性高**：HTTP也很稳定，但HTTP是在协议上稳定稳定性不只是服务端的事情，在CDN分发，服务器管理，客户端的支持上
+    
+- RTMP的使用
+    - RTMP协议也要客户端和服务器通过“握手”来建立基于传输层链接之上的RTMP Connection链接，在Connection链接上会传输一些控制信息
+     - TMP协议传输时会对数据做自己的格式化，这种格式的消息我们称之为**RTMP Message**
+    - 而实际传输的时候为了更好地实现**多路复用、分包和信息的公平性，发送端会把Message划分为带有Message ID的Chunk，每个Chunk可能是一个单独的Message，也可能是Message的一部分，在接受端会根据chunk中包含的data的长度，message id和message的长度把chunk还原成完整的Message**，从而实现信息的收发。
     
     
