@@ -311,12 +311,16 @@ void didCompressH264(void *outputCallbackRefCon, void *sourceFrameRefCon, OSStat
 
  ```
  
- - 当编码成功后，将编码后的码流写入文件。
+ - **当编码成功后，将编码后的码流写入文件**。
  
      - 编码成功后会回调之前的输入的函数。
      - 1、先判断是否为**关键帧**：
          - 如果是关键帧，则需要在写入关键帧之前，先写入PPS   、SPS的NALU 
          - 取出PPS、SPS 数据，并且封装成NALU 单元，写入文件。
+     - 2、 将I帧、P帧、B帧分别封装成NALU单元写入文件
+     - 写入后，数据存储方式：
+     
+     ![](/assets/image8.png)
  
  
  
