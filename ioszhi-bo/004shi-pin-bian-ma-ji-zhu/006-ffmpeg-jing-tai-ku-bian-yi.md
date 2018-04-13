@@ -40,11 +40,12 @@ brew install ffmpeg
 ####三、编译FFmpeg(iOS)
 
 - **下载编译FFmpeg所需要的脚本文件gas-preprocessor.pl**
-    - 下载地址: https://github.com/mansr/gas-preprocessor
-    - 
+    - 下载地址: https://github.com/mansr/gas-preprocessor (这个可能不对)
+    - 还有一个地址
 - **复制gas-preprocessor.pl到/usr/sbin下，（这个应该是复制到/usr/local/bin）**
-- **修改文件权限：chmod 777 /usr/local/bin/gas-preprocessor.pl**
+- **修改文件权限：
+    - chmod 777 /usr/local/bin/gas-preprocessor.pl**
 - **下载脚本FFmpeg脚本**
-地址: https://github.com/kewlbear/FFmpeg-iOS-build-script
-解压，找到文件 build-ffmpeg.sh
-执行服本文件：./build-ffmpeg.sh
+    - 地址: https://github.com/kewlbear/FFmpeg-iOS-build-script
+    - 解压，找到文件 build-ffmpeg.sh
+    - 执行服本文件：./build-ffmpeg.sh
