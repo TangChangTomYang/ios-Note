@@ -74,3 +74,24 @@ ffmpeg -re -i story.mp4 -vcodec libx264 -vprofile baseline -acodec aac -ar 44100
 ffmpeg -re -i /Users/apple/Desktop/ffmepg/HLS切片/说出你的励志故事.mp4 -vcodec libx264 -vprofile baseline -acodec aac -ar 44100 -strict -2 -ac 1 -f flv -s 1280x720 -q 10 rtmp://localhost:1935/hls/demo
 
 ```
+
+####三、远程服务器配置
+
+```objc
+0> 安装git
+* apt-get install git
+1> git clone srs
+2> cd srs目录
+* git checkout 2.0release
+* git pull
+* cd truck
+3> 配置远程服务器环境
+* ./configure --disable-all --with-ssl --with-nginx --with-hls --with-http-callback --with-http-server --with-http-api --with-ffmpeg --with-transcode --with-librtmp --with-dvr && make
+4> 启动配置
+* ./objcs/srs -c conf/srs.conf
+* 查看pid: pgrep
+5> 关闭进程
+* kill nginx/killall nginx
+6> 推流可以播放hls/rtmp
+* 加载自己配置的conf文件srs/trunk/conf
+```
