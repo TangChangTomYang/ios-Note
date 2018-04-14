@@ -65,6 +65,7 @@ brew info nginx-full
     ```objc
     /usr/local/etc/nginx/nginx.conf 
     ```
+    
 ####四、运行nginx
 - 启动nginx,执行命令:
 ```objc
@@ -97,6 +98,50 @@ nginx -s reload
 ```objc
 sudo /usr/local/opt/nginx-full/bin/nginx -s reload  
 ```
+
+####五、测试
+
+#####五、一、安装ffmepg工具
+注:ffmepg转码工具
+安装一个支持rtmp协议的视频播放器，Mac下可以用VLC
+本地下载一个视频文件路径为 /Users/ailvgo/Downloads/keep.mp4
+
+- 执行命令:
+```objc
+ffmpeg -re -i /Users/ailvgo/Downloads/keep.mp4 -vcodec libx264 -acodec aac -strict -2 -f flv rtmp://localhost:1935/rtmplive/room  
+```
+
+- 用vlc 然后打开 VLC 中 的 file -- Open Network, 直接输入代码中的 url:
+```objc
+rtmp://localhost:1935/rtmplive/room  
+```
+
+然后进行播放
+
+
+####六、FFmpeg常用推流命令
+
+- 1、桌面录制或者分享
+```objc
+ffmpeg -f avfoundation -i "1" -vcodec libx264 -preset ultrafast -acodec libfaac -f flv rtmp://localhost:1935/rtmplive/room  
+```
+- 桌面+麦克风
+```objc
+ffmpeg -f avfoundation -i "1:0" -vcodec libx264 -preset ultrafast -acodec libmp3lame -ar 44100 -ac 1 -f flv rtmp://localhost:1935/rtmplive/room  
+
+```
+- 桌面+麦克风，并且还要摄像头拍摄到自己
+```objc
+ffmpeg -f avfoundation -framerate 30 -i "1:0" \-f avfoundation -framerate 30 -video_size 640x480 -i "0" \-c:v libx264 -preset ultrafast \-filter_complex 'overlay=main_w-overlay_w-10:main_h-overlay_h-10' -acodec libmp3lame -ar 44100 -ac 1 -f flv rtmp://localhost:2016/rtmplive/room  
+```
+
+
+####七、手机推流
+可以用  LFLiveKit 集成到工程进行推流,只需把localhost:8080换成自己电脑的ip地址即可:
+```objc
+rtmp://10.0.0.17:1935/rtmplive/room 
+```
+
 
 
 
