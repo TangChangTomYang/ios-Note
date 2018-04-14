@@ -28,6 +28,7 @@
     
 - **使用FFmpeg命令将mp4文件切换成m3u8&ts切片**
 
+![](/assets/193353-5d0a1789b252264b.png)
 
 
 ```objc
