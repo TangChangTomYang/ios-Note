@@ -63,6 +63,7 @@
     * [002-iOS 直播协议](ioszhi-bo/005liu-mei-ti-xie-yi/002-ios-zhi-bo-xie-yi.md)
     * [003-本地推流、远程推流服务器搭建](ioszhi-bo/005liu-mei-ti-xie-yi/003tui-liu-yan-shi.md)
       * [001- nginx 常用操作命令](ioszhi-bo/005liu-mei-ti-xie-yi/003tui-liu-yan-shi/001-nginx-chang-yong-cao-zuo-ming-ling.md)
+      * [002-OBS ](ioszhi-bo/005liu-mei-ti-xie-yi/003tui-liu-yan-shi/002-obs.md)
     * [004-iOS 中实现推流](ioszhi-bo/005liu-mei-ti-xie-yi/004-ios-zhong-shi-xian-tui-liu.md)
   * [009-推流演示](ioszhi-bo/009tui-liu-yan-shi.md)
   * [010-iOS中实现推流](ioszhi-bo/010-ioszhong-shi-xian-tui-liu.md)
