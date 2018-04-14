@@ -11,7 +11,7 @@
     
 ####二、HLS(HTTP Live Streaming)
 
-- **HTTP Live Streaming（HLS）**是苹果公司实现的**基于HTTP的流媒体传输协议**，可实现流媒体的直播和点播。**原理上是将视频流分片成一系列HTTP下载文件**。所以，HLS比RTMP有较高的延迟；HLS基于HTTP协议实现，传输内容包括两部分。
+- **HTTP Live Streaming（HLS）**是苹果公司实现的**基于HTTP的流媒体传输协议**，可实现流媒体的直播和点播。**原理上是将视频流分片成一系列HTTP下载文件**。所以，HLS比RTMP有较高的延迟（一般30s以内）；HLS基于HTTP协议实现，传输内容包括两部分。
     - 一是M3U8描述文件
     - 二是TS媒体文件
 
@@ -47,7 +47,7 @@ ffmpeg -i XXX.mp4 -c:v libx264 -c:a copy -f hls XXX.m3u8
 ####三、RTMP
 - RTMP协议是 Adobe 公司开发的一个基于TCP的应用层协议，Adobe 公司也公布了关于RTMP的规范
 - RTMP本质上是流协议，主要的优势是：
-    - 实时性高：RTMP的实时性在3秒之内，经过多层CDN节点分发后，实时性也在3秒左右,在一些实时性有要求的应用中以RTMP为主。
+    - 实时性高：RTMP的实时性在3~5秒之内，经过多层CDN节点分发后，实时性也在3秒左右,在一些实时性有要求的应用中以RTMP为主。
     - 支持加密：RTMPE和RTMPS为加密协议
     - 稳定性高：HTTP也很稳定，但HTTP是在协议上稳定稳定性不只是服务端的事情，在CDN分发，服务器管理，客户端的支持上
     
