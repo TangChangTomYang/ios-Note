@@ -12,6 +12,8 @@
 ```objc
 // 1> 将Nginx Clone到本地
 $ brew tap homebrew/nginx
+上面这个不行就用下面这个
+brew tap denji/nginx  
 // 2> 链接要执行的命令
 $ brew link pcre rtmp-nginx-module
 // 3> 安装Nginx
