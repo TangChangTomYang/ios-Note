@@ -39,6 +39,9 @@ brew install ffmpeg
 // 执行转换命令
 ffmpeg -i XXX.mp4 -c:v libx264 -c:a copy -f hls XXX.m3u8
 ```
+
+- **m3u8索引头解析**
+
     
     
     
