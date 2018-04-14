@@ -72,6 +72,8 @@ nginx
 ```
 浏览器地址栏输入：http://localhost:8080
 
+![](/assets/Snip20180414_4.png)
+
 
 
 
