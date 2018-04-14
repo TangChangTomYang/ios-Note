@@ -20,6 +20,12 @@ $ brew link pcre rtmp-nginx-module
 $ brew install nginx-full --with-rtmp-module
 ```
 
+查看安装路径：
+```objc
+brew info nginx-full  
+```
+![](/assets/Snip20180414_1.png)
+
 - **记住安装配置文件的路径**(/usr/local/etc/nginx/nginx.conf)
 - **启动即可:**
     - $ nginx
