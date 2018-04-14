@@ -8,7 +8,7 @@
     ![](/assets/193353-d0d35adf8eb94a3b.png)
     - 简言之，Nginx本身是一个非常出色的HTTP服务器，具有占用内存少，高并发的特点。
 - **Nginx安装**
-
+参考文章：https://blog.csdn.net/zcvbnh/article/details/79495285
 ```objc
 // 1> 将Nginx Clone到本地
 $ brew tap homebrew/nginx
