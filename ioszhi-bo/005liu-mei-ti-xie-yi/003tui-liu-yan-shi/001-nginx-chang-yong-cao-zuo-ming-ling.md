@@ -73,6 +73,30 @@ nginx
 浏览器地址栏输入：http://localhost:8080
 
 ![](/assets/Snip20180414_4.png)
+出现以上画面,说明nginx安装成功.
+
+- 如果终端上提示下面信息，则表示8080端口被占用了
+```objc
+nginx: [emerg] bind() to 0.0.0.0:8080 failed (48: Address already in use) 
+```
+- 查看端口PID
+```objc
+lsof -i tcp:8080  
+```
+- kill掉占用8080端口的**PID**
+```objc
+kill 9603（这里替换成占用8080端口的PID）  
+```
+
+-  编辑完成之后,执行一下重新加载配置文件命令:
+```objc
+nginx -s reload 
+```
+
+- 重启nginx：
+```objc
+sudo /usr/local/opt/nginx-full/bin/nginx -s reload  
+```
 
 
 
