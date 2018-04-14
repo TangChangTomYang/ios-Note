@@ -55,7 +55,22 @@ brew install nginx-full --with-rtmp-module
 ```objc
 brew info nginx-full  
 ```
+![](/assets/Snip20180414_3.png)
 
+    - 如图所示 nginx安装位置是：
+    ```objc
+    /usr/local/opt/nginx-full/bin/nginx 
+    ```
+    - nginx配置文件位置是：
+    ```objc
+    /usr/local/etc/nginx/nginx.conf 
+    ```
+####四、运行nginx
+- 启动nginx,执行命令:
+```objc
+nginx 
+```
+浏览器地址栏输入：http://localhost:8080
 
 
 
