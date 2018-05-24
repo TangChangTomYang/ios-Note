@@ -21,12 +21,12 @@
 
 
 **- (void)loadView 特点：**
-- 1> 一但重写了loadView,就代表控制器的View有自己来创建
-- 2> 写[super loadView]也不行.
-- 3> 不要在loadView 方法中 使用self.View  会造成死循环。
+- 1> 一但重写了loadView,就代表控制器的View由自己来创建
+- 2> **写[super loadView]也不行**.
+- 3> **不要在loadView 方法中 使用self.View  会造成死循环。**
 
 ```objc
-- (void)loadView {
+- (void)loadView { // 系统loadView默认流程
     
     //1.当前控制器是否从StoryBaord当中加载
     //self.view = storyBaord当中控制器的View;
@@ -53,7 +53,7 @@
 
 **上面有提到，控制器有个类似下面这样的懒加载的View**
 ```objc
-- (UIView *)view {
+- (UIView *)view {  
 
     if (_view == nil) {
 
