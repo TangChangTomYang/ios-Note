@@ -7,6 +7,7 @@
     //1.创建窗口
     self.window = [[UIWindow alloc] init];
     self.window.backgroundColor = [UIColor blueColor];
+    
     //2.设置窗口的根控制器 (每一个UIWindow都必须得要有一个根控制器.rootViewController.)
     UIViewController *vc = [[UIViewController alloc] init];
     vc.view.backgroundColor = [UIColor redColor];
@@ -14,6 +15,7 @@
     self.window.rootViewController = vc;
     //NSLog(@"%@",[UIApplication sharedApplication].keyWindow);
     //NSLog(@"%@",self.window);
+    
     //3.显示窗口
     [self.window makeKeyAndVisible];
     //NSLog(@"%@",self.window);
@@ -30,12 +32,7 @@
        [self.window addSubview:self.window.rootViewController.view];
      
      */
-
-    
-    
-    
-    
-    
+     
     return YES;
 }
 
